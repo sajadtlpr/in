@@ -239,6 +239,86 @@
     animation: fadeInOut 3s ease-in-out;
   }
 
+<section class="work">
+  <h2 class="section-title">Work</h2>
+
+  <div class="work__container bd-grid">
+    <a href="#" class="work__img" onclick="showUnderConstructionMessage('Project 1')">
+      <img src="assets/img/work1.jpg" alt="">
+      <h3>Project 1</h3>
+      <p>A web application that allows users to track their spending.</p>
+    </a>
+    <a href="#" class="work__img" onclick="showUnderConstructionMessage('Project 2')">
+      <img src="assets/img/work2.jpg" alt="">
+      <h3>Project 2</h3>
+      <p>A mobile app that helps users find and book parking spaces.</p>
+    </a>
+    <a href="#" class="work__img" onclick="showUnderConstructionMessage('Project 3')">
+      <img src="assets/img/work3.jpg" alt="">
+      <h3>Project 3</h3>
+      <p>A machine learning model that predicts the likelihood of task outputs.</p>
+    </a>
+    <a href="#" class="work__img" onclick="showUnderConstructionMessage('Project 4')">
+      <img src="assets/img/work4.jpg" alt="">
+      <h3>Project 4</h3>
+      <p>A distributed system that manages the flow of data between different microservices.</p>
+    </a>
+    <a href="#" class="work__img" onclick="showUnderConstructionMessage('Project 5')">
+      <img src="assets/img/work5.jpg" alt="">
+      <h3>Project 5</h3>
+      <p>A real-time chat application that allows users to communicate with each other.</p>
+    </a>
+  </div>
+</section>
+
+<style>
+  /* CSS styling for under construction message */
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .work__img {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .work__img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .work__img h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .work__img p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .under-construction {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e1f5fe;
+    border: 2px solid #e91e63;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    animation: fadeInOut 3s ease-in-out;
+  }
+
   @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     10%, 90% { opacity: 1; }
